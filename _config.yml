@@ -43,13 +43,13 @@ timezone: Asia/Shanghai
 author:
   name: laowang
   email:  poymahuateng@mail.ru
-  # facebook:  #your Facebook username
-  # twitter:  #your Twitter username
-  # github:  #your GitHub username
-  # googleplus:  #your Google+ username
+  facebook:  #your Facebook username
+  twitter:  #your Twitter username
+  github:  #your GitHub username
+  googleplus:  #your Google+ username
   weibo:  test11
-  # douban:  #your Douban username
-  # linkedin:  #your Linkedin username
+  douban:  #your Douban username
+  linkedin:  #your Linkedin username
 
 ## Comment system (Disqus) ##
 disqus:
