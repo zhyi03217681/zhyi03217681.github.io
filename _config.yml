@@ -13,7 +13,7 @@
 
 ## Base settings ##
 # url:  #the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl: /
+baseurl: http://www.biibii.top
 title: 六合彩大全
 keyword: 老阿汪
 description: SEO hui lai zhe li kan yi kan
