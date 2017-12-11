@@ -8,3 +8,19 @@
 {% assign __path = '/feed.xml' %}
 {% include snippets/prepend-baseurl.html %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ __return | prepend: site.url }}">
+<!-- 这里是growingio -->
+<script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', '9e213505699c9614']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'assets.growingio.com/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
