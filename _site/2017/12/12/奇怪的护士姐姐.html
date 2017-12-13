@@ -81,7 +81,29 @@
         })();
       })();
   </script>
-  
+
+  <!-- 点击收藏 -->
+  <script type='text/javascript'>
+  var shoucang = shoucang;
+  function shoucang(sTitle,sURL) {
+      try
+      {
+          window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+          try
+          {
+              window.sidebar.addPanel(sTitle, sURL, "");
+          }
+          catch (e)
+          {
+              alert("加入收藏失败，请使用Ctrl+D进行添加");
+          }
+      }
+  }
+  </script>
+
     
   </head>
   <body>
@@ -235,6 +257,14 @@
 
 <p><img src="http://ww1.sinaimg.cn/large/0060lm7Tly1fmewh7rufig30hs0a01kx.gif" alt="胸摩" /></p>
 
+<!-- 以下是常规落款 -->
+<p><img src="https://upload.cc/i/7D2dOc.jpg" alt="微信二维码" /></p>
+
+<blockquote>
+  <p>想看更多文章请👆扫码关注</p>
+
+  <p>亦可将本站<a href="javascript:" onclick="shoucang(document.title,window.location);">加入收藏</a></p>
+</blockquote>
 </div>
 				<footer>
 					

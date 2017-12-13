@@ -81,7 +81,29 @@
         })();
       })();
   </script>
-  
+
+  <!-- 点击收藏 -->
+  <script type='text/javascript'>
+  var shoucang = shoucang;
+  function shoucang(sTitle,sURL) {
+      try
+      {
+          window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+          try
+          {
+              window.sidebar.addPanel(sTitle, sURL, "");
+          }
+          catch (e)
+          {
+              alert("加入收藏失败，请使用Ctrl+D进行添加");
+          }
+      }
+  }
+  </script>
+
     
   </head>
   <body>

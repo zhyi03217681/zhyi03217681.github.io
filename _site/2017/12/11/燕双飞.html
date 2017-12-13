@@ -81,7 +81,29 @@
         })();
       })();
   </script>
-  
+
+  <!-- 点击收藏 -->
+  <script type='text/javascript'>
+  var shoucang = shoucang;
+  function shoucang(sTitle,sURL) {
+      try
+      {
+          window.external.addFavorite(sURL, sTitle);
+      }
+      catch (e)
+      {
+          try
+          {
+              window.sidebar.addPanel(sTitle, sURL, "");
+          }
+          catch (e)
+          {
+              alert("加入收藏失败，请使用Ctrl+D进行添加");
+          }
+      }
+  }
+  </script>
+
     
   </head>
   <body>
@@ -2301,6 +2323,15 @@ UU1001词语替换地叫着，独舞尽情的扭动着他的身体，一种浓�
 不过，极度紧张后的身子，一旦松弛便泛上浓浓的倦意，打了一个小小的哈欠，燕独舞咕哝了一声：“以后，不许⋯⋯” 
 话未曾说完，独舞便沉入了黑暗中。 
 燕不归轻柔地撩开薄被，看着那熟睡的媚颜，轻轻地笑了，俯身在那红唇上落下一个柔软的轻吻，低低地应道：“再也，不会了⋯⋯”</p>
+
+<!-- 以下是常规落款 -->
+<p><img src="https://upload.cc/i/7D2dOc.jpg" alt="微信二维码" /></p>
+
+<blockquote>
+  <p>想看更多文章请👆扫码关注</p>
+
+  <p>亦可将本站<a href="javascript:" onclick="shoucang(document.title,window.location);">加入收藏</a></p>
+</blockquote>
 </div>
 				<footer>
 					
